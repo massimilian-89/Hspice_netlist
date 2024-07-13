@@ -1,0 +1,47 @@
+*********************************************Carry select Adder4X2bits*********************************************** 
+********remember this program is only for using with ST65LIKE_cell_library_v2020_1.net
+********so keep the library inside the folder of the netlist for fast easy using
+.include ST65LIKE_cell_library_v2020_1.net
+.PARAM Lmin=16nm
+.PARAM Wmin=16nm
+.PARAM tr=10p
+******* the above may be changed by the user according to the target technology and signal rise time *****************
+***************************************************************Block 1*****************************
+xFA0 0  node1  nodez0  nodeCO0 nodeCin0  nodeB0  nodeA0  FA_sub  xx=1
+                                                        
+xFA1 0  node1  nodez1  nodeCO1 nodeCO0  nodeB1  nodeA1  FA_sub  xx=1
+                       
+
+*********************  0   **************************************
+xFA2 0  node1  nodeS20   nodeCO20           0     nodeB2  nodeA2  FA_sub  xx=1
+xFA3 0  node1  nodeS30  nodeCO30    nodeCO20  nodeB3  nodeA3  FA_sub  xx=1
+*********************  1   **************************************
+xFA4 0  node1  nodeS21   nodeCO21     1   nodeB2  nodeA2  FA_sub  xx=1
+xFA5 0  node1  nodeS31  nodeCO31    nodeCO21  nodeB3  nodeA3  FA_sub   xx=1
+*********************  mul   **************************************
+xMUX_0          0                node1  nodez2  nodeS20 nodeS21 nodeCO1    mux21_SUB   XX=1
+xMUX_1          0                node1  nodez3  nodeS30 nodeS31 nodeCO1    mux21_SUB   XX=1
+*********************  a012   **************************************
+xAO12_0          0                  node1    nodeCO3 nodeCO1 nodeCO31 nodeCO30            AO12_SUB              XX=1
+**************************************************import the test voltages after this line*********************
+********************************************************supply******************************************************************************
+VDD node1 0 dc 1v
+vnodecin0 nodecin0 0 dc 0
+****************************************************************************************************
+*******************************************************simulate**************************************************************
+******************************************************primary pwl************************************************* 
+VnodeA0     nodeA0                     0              pwl (0 0 1000p 0)
+VnodeB0     nodeB0                     0              pwl (0 0 1000p 0)
+VnodeA1     nodeA1                     0              pwl (0 0 1000p 0)
+VnodeB1     nodeB1                     0              pwl (0 0 1000p 0)
+VnodeA2     nodeA2                     0              pwl (0 0 1000p 0)
+VnodeB2     nodeB2                     0              pwl (0 0 1000p 0)
+VnodeA3     nodeA3                     0              pwl (0 0 1000p 0)
+VnodeB3     nodeB3                     0              pwl (0 0 1000p 0)
+.option filetype=ascii
+.TRAN 0.1p 820p
+.control
+run 
+plot                      *****change this part for plotting*******
+.endc
+.end

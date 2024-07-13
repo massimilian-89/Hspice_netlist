@@ -1,0 +1,108 @@
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+xfa0.nodecon                        0.00739247
+node1                                        1
+xfa0.node4                          0.00406257
+xfa0.1                                0.150406
+xfa0.5                             0.000370176
+xfa0.4                                0.857271
+nodecin0                                     0
+xfa0.2                                0.992796
+xfa0.3                             0.000377252
+xfa0.nodeson                           0.98751
+xfa0.9                                0.990104
+xfa0.7                              0.00114498
+xfa0.8                                0.986567
+xfa0.6                              0.00153373
+nodeco0                               0.994626
+nodes0                             0.000527963                               ////  S0
+xfa1.nodecon                        0.00258214
+xfa1.node4                          0.00165998
+xfa1.1                                0.962228
+xfa1.5                              0.00122709
+xfa1.4                                 0.92169
+xfa1.2                                0.165432
+xfa1.3                             0.000367611
+xfa1.nodeson                        0.00687533
+xfa1.9                                0.883276
+xfa1.7                              0.00303949
+xfa1.8                                0.874793
+xfa1.6                               0.0053261
+nodeco1                               0.996646
+nodes1                                0.998941                               ////  S1
+xfa2.nodecon                           0.98912
+xfa2.node4                            0.838406
+xfa2.1                                0.992624
+xfa2.5                             0.000381663
+xfa2.4                                0.991663
+xfa2.2                                0.998888
+xfa2.3                              0.00273157
+xfa2.nodeson                        0.00474541
+xfa2.9                                0.144293
+xfa2.7                              0.00037895
+xfa2.8                                0.120403
+xfa2.6                              0.00232522
+nodeco20                            0.00515721
+nodes20                               0.998789
+xfa3.nodecon                          0.992592
+xfa3.node4                           0.0476101
+xfa3.1                                0.995437
+xfa3.5                               0.0370961
+xfa3.4                                0.993049
+xfa3.2                                0.995626
+xfa3.3                                0.802359
+xfa3.nodeson                          0.984366
+xfa3.9                                0.989963
+xfa3.7                               0.0160947
+xfa3.8                                0.986225
+xfa3.6                               0.0633554
+nodeco30                            0.00184097
+nodes30                             0.00061104
+xfa4.nodecon                        0.00873244
+xfa4.node4                           0.0090901
+xfa4.1                                0.996892
+xfa4.5                              0.00473138
+xfa4.4                                0.995831
+xfa4.2                                0.995593
+xfa4.3                             0.000377628
+xfa4.nodeson                           0.99318
+xfa4.9                                 0.41593
+xfa4.7                              0.00038806
+xfa4.8                                0.415926
+xfa4.6                                0.838714
+nodeco21                              0.995923
+nodes21                             0.00195498
+xfa5.nodecon                          0.986895
+xfa5.node4                            0.047385
+xfa5.1                                 0.99582
+xfa5.5                                0.816409
+xfa5.4                                0.990394
+xfa5.2                                0.995915
+xfa5.3                              0.00388928
+xfa5.nodeson                        0.00707329
+xfa5.9                                0.992935
+xfa5.7                              0.00326548
+xfa5.8                                0.991887
+xfa5.6                              0.00743641
+nodeco31                            0.00186829
+nodes31                               0.997382
+xmux_0.nodecn                      0.000611015
+xmux_0.nodeu                        0.00302481
+nodez2                             0.000496424                                  ////  S2
+xmux_0.nodeun                         0.997795
+xmux_1.nodecn                       0.00193991
+xmux_1.nodeu                           0.99498
+nodez3                                0.998935                                  ////  S3
+xmux_1.nodeun                       0.00189095
+xao12_0.9                             0.994895
+xao12_0.8                              0.83582
+xao12_0.7                             0.996477                                  //// CO
+nodeco3                            0.000498541                                
+vnodecin0#branch                   1.00638e-06
+vdd#branch                        -2.86235e-05
+
+ Reference value :  7.98828e-10
+No. of Data Rows : 8208
